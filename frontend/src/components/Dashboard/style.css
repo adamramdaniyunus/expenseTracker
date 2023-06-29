@@ -1,0 +1,8 @@
+.sidebar {
+    text-decoration: none;
+}
+
+.sidebar.active {
+    background-color: black;
+    color: red;
+}

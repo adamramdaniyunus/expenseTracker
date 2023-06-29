@@ -1,0 +1,17 @@
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar__income {
+    height: 100%;
+    background-color: #00c853;
+}
+
+.progress-bar__expense {
+    height: 100%;
+    background-color: #ff1744;
+}

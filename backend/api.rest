@@ -1,0 +1,68 @@
+GET http://localhost:5001/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDlhM2I5NDRhNTMxMmE5ZGVhMTQ5Y2UiLCJuYW1lIjoiQWRhbSIsImVtYWlsIjoiYWRhbUBnbWFpbC5jb20iLCJpYXQiOjE2ODc4NDcxODYsImV4cCI6MTY4Nzg0NzIwNn0.GP4PNhc-9fh6gflYp7iH2fYFx3AUfVUVWNKBvewGn6o
+
+###
+POST http://localhost:5001/register
+Content-Type: application/json
+
+{
+    "name": "Adam2",
+    "email": "adam2@gmail.com",
+    "password": "1234567890",
+    "confpassword": "1234567890"
+}
+
+###
+POST http://localhost:5001/login
+Content-Type: application/json
+
+{
+    "email": "adam@gmail.com",
+    "password": "1234567890"
+}
+
+###
+GET http://localhost:5001/token
+
+###
+DELETE http://localhost:5001/logout
+
+###
+GET http://localhost:5001/expense
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDlhM2I5NDRhNTMxMmE5ZGVhMTQ5Y2UiLCJuYW1lIjoiQWRhbSIsImVtYWlsIjoiYWRhbUBnbWFpbC5jb20iLCJpYXQiOjE2ODc5NTUxODgsImV4cCI6MTY4Nzk1NTIwOH0.3V1Bgz7PqPXPIFv7IStSACxo5ubKJ4Be1mUgRW-LQ0M
+###
+GET http://localhost:5001/income/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDlhM2I5NDRhNTMxMmE5ZGVhMTQ5Y2UiLCJuYW1lIjoiQWRhbSIsImVtYWlsIjoiYWRhbUBnbWFpbC5jb20iLCJpYXQiOjE2ODc4NDA0OTYsImV4cCI6MTY4Nzg0MDUxNn0.o7hCA3_bc109tOT2v8Hfe0L-jud9L6cIi0-CyosqKtY
+
+
+
+###
+GET http://localhost:5001/token
+###
+POST http://localhost:5001/expense
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDlhM2I5NDRhNTMxMmE5ZGVhMTQ5Y2UiLCJuYW1lIjoiQWRhbSIsImVtYWlsIjoiYWRhbUBnbWFpbC5jb20iLCJpYXQiOjE2ODc5NTUxNjksImV4cCI6MTY4Nzk1NTE4OX0.GprrAjWmmv6u9U2zST5WTFYr07bNZILN7iAg-M0toN8
+
+{
+    "title": "Bitcoin",
+    "amount": "3000",
+    "type": "income",
+    "date": "12-12-2022",
+    "category": "Bitcoin",
+    "description": "Menjual bitcoin"
+}
+
+
+###
+PATCH  http://localhost:5001/income/649a6c43dd308dad64cea7c0
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDlhM2I5NDRhNTMxMmE5ZGVhMTQ5Y2UiLCJuYW1lIjoiQWRhbSIsImVtYWlsIjoiYWRhbUBnbWFpbC5jb20iLCJpYXQiOjE2ODc4NDczNTEsImV4cCI6MTY4Nzg0NzM3MX0.6c8eeD0RMRDC2lu9Mqd0f80UvjAmoE-YG6iK7Kbk_Lc
+
+{
+    "title": "Bitcoin update",
+    "amount": "3000",
+    "type": "income",
+    "date": "12-12-2022",
+    "category": "Bitcoin",
+    "description": "Menjual bitcoin"
+}
